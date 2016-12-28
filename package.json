@@ -1,0 +1,27 @@
+{
+  "name": "lego",
+  "version": "0.0.2",
+  "description": "Hassle-free starter kit for building js modules",
+  "main": "bin/lego.js",
+  "bin": {
+    "lego": "bin/lego.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pqml/lego.git"
+  },
+  "author": "pqml",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pqml/lego/issues"
+  },
+  "homepage": "https://github.com/pqml/lego#readme",
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "kool-shell": "^0.5.4"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
