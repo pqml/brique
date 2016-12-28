@@ -1,6 +1,8 @@
-<br>
+<p align="center">
+  <img src="vignette.gif" width="220" alt="brostart">
+</p>
 <h1 align="center">lego</h1>
-<h3 align="center">_Hassle-free starter kit for building js modules_</h3>
+<h3 align="center">Hassle-free starter kit for building js modules</h3>
 
 <br><br>
 
