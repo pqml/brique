@@ -1,8 +1,10 @@
+'use strict'
+
 const fs = require('fs-extra')
 
 const errors = {
   missingArgs: new Error('You need to provide a path'),
-  dirExists: '💀  Error: Folder already exists'
+  dirExists: 'Folder already exists'
 }
 
 function mkdirs (folderPath) {

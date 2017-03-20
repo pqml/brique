@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+'use strict'
+module.exports = function (data, utils) {
+  return (
+
+`<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>__moduleName__</title>
-    <meta name="description" content="An example for __moduleName__">
+    <title>${data.moduleName}</title>
+    <meta name="description" content="An example for ${data.moduleName}">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimal-ui">
     <style>
       body {
@@ -12,8 +16,12 @@
     </style>
   </head>
   <body>
-    <script src="../build/__moduleName__.js"></script>
+    <script src="bundle.js"></script>
     <script>
     </script>
   </body>
 </html>
+`
+
+  )
+}

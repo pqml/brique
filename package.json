@@ -1,27 +1,43 @@
 {
-  "name": "lego",
+  "name": "brique",
   "version": "0.0.2",
-  "description": "Hassle-free starter kit for building js modules",
-  "main": "bin/lego.js",
+  "description": "Rollup-based starter kit for building front-end js modules",
+  "keywords": [
+    "rollup",
+    "modules",
+    "bundler",
+    "workflow",
+    "cli",
+    "devserver",
+    "dev",
+    "development",
+    "es6",
+    "tree-shaking"
+  ],
+  "main": "bin/brique.js",
   "bin": {
-    "lego": "bin/lego.js"
+    "brique": "bin/brique.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pqml/lego.git"
+    "url": "git+https://github.com/pqml/brique.git"
   },
   "author": "pqml",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pqml/lego/issues"
+    "url": "https://github.com/pqml/brique/issues"
   },
-  "homepage": "https://github.com/pqml/lego#readme",
+  "homepage": "https://github.com/pqml/brique#readme",
   "dependencies": {
     "fs-extra": "^1.0.0",
-    "kool-shell": "^0.5.4"
+    "js-string-escape": "^1.0.1",
+    "kool-shell": "^1.4.0",
+    "stringify-object": "^3.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "fmt-obj": "^1.3.0"
+  },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=4.0.0"
   }
 }

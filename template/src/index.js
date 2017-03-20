@@ -1,5 +1,3 @@
-import { successWord } from './dependency.js'
-
-var str = 'It’s ' + successWord
+var str = 'It’s working!'
 
 export default str
