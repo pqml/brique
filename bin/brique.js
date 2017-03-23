@@ -85,10 +85,12 @@ Promise.resolve()
   })
 
   // NPM package.json > add scripts
-  .then(() => setNpmScripts({ entry, name, formats }))
+  .then(() => setNpmScripts({ entry, name, formats, moduleName: data.rollup.globalName }))
   .then(scriptsData => {
     devDeps = devDeps.concat(scriptsData.devDeps)
     data.pkgjson.scripts = scriptsData.scripts
+    data.bodyContent = scriptsData.bodyContent
+    Object.assign(files, scriptsData.files)
   })
 
   // NPM package.json > add differents entry files

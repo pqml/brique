@@ -16,9 +16,7 @@ module.exports = function (data, utils) {
     </style>
   </head>
   <body>
-    <script src="bundle.js"></script>
-    <script>
-    </script>
+    ${utils.indent(data.bodyContent, 2, false)}
   </body>
 </html>
 `
