@@ -14,6 +14,7 @@
 - Multi-output : ES6, ES5 UMD, ES5 UMD & Minified
 - Incremental builds on change with `another-rollup-watch`
 - Dev server with `rulo`
+- Quickly deploy example of your module into a gh-pages branch with `ghp`
 
 <br>
 <h1></h1>
@@ -57,14 +58,6 @@ npm run dev
 <br>
 
 _Note: you need to be in the module folder to use `build` & `dev`_
-
-<br>
-<h1></h1>
-<br>
-
-### :memo: Todo
-
-- Use `ghp` to deploy the examples folder into a gh-page branch
 
 <br>
 <h1></h1>
