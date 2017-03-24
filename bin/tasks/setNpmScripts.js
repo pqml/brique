@@ -48,7 +48,8 @@ function setNpmScripts (opts) {
       ' -f iife' +
       ' -d example' +
       ' -W' +
-      ' -c'
+      ' -c' +
+      ' -- -m'
     }
 
     if (hasFormat('iife', opts.formats)) {
@@ -60,9 +61,11 @@ function setNpmScripts (opts) {
         scripts.dev = 'rulo -i ' + opts.entry +
           ' -o ' + opts.name + '.min.js' +
           ' -f iife' +
-          ' -d example ' +
+          ' -d example' +
+          ' -n ' + opts.moduleName +
           ' -W' +
-          ' -c'
+          ' -c' +
+          ' -- -m'
         bodyContent = '<script src="' + opts.name + '.min.js"></script>\n' +
           '<script>\n  // Code your example here\n</script>'
       }).then(() => {

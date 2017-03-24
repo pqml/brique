@@ -62,11 +62,17 @@ Promise.resolve()
   // NPM package.json > basic keys
   .then(() => { data.pkgjson.name = jsonString(name) })
   .then(() => promptDescription())
-  .then(description => { data.pkgjson.description = jsonString(description) })
+  .then(description => {
+    data.pkgjson.description = jsonString(description)
+    data.description = description
+  })
   .then(() => promptVersion())
   .then(version => { data.pkgjson.version = jsonString(version) })
   .then(() => promptAuthor())
-  .then(author => { data.pkgjson.author = jsonString(author) })
+  .then(author => {
+    data.author = author
+    data.pkgjson.author = jsonString(author)
+  })
 
   // Rollup > config related tasks
   .then(() => { data.rollup.entry = entry })
