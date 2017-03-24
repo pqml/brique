@@ -1,6 +1,6 @@
 {
   "name": "brique",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Rollup-based starter kit for building front-end js modules",
   "keywords": [
     "rollup",
