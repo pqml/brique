@@ -1,4 +1,4 @@
-<p align="center"><img width="180" src="https://github.com/pqml/brique/raw/master/vignette.gif"></p>
+<p align="center"><img width="180" src="https://github.com/pqml/brique/blob/gh-assets/brique.gif?raw=true"></p>
 <h1 align="center">brique</h1>
 <h3 align="center">Hassle-free starter kit for building future-proof front-end js modules</h3>
 
