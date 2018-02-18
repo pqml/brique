@@ -1,43 +1,46 @@
 {
-  "name": "brique",
-  "version": "0.3.1",
-  "description": "Rollup-based starter kit for building front-end js modules",
-  "keywords": [
-    "rollup",
-    "modules",
-    "bundler",
-    "workflow",
-    "cli",
-    "devserver",
-    "dev",
-    "development",
-    "es6",
-    "tree-shaking"
+  "name": "mymodule",
+  "amdName": "MyModule",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src/index.js",
+  "main": "dist/mymodule.js",
+  "module": "dist/mymodule.m.js",
+  "unpkg": "dist/mymodule.umd.js",
+  "files": [
+    "dist"
   ],
-  "main": "bin/brique.js",
-  "bin": {
-    "brique": "bin/brique.js"
+  "scripts": {
+    "start": "microbundle watch -f umd -o example --target browser & light-server -s example -p 8080 -w example/**/*",
+    "build": "microbundle -f es,cjs --external all && microbundle -f umd --target browser",
+    "test": "eslint src/**",
+    "deploy": "ghp example"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pqml/brique.git"
   },
+  "keywords": [
+    "rollup",
+    "bundle",
+    "microbundle"
+  ],
   "author": "pqml",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pqml/brique/issues"
   },
   "homepage": "https://github.com/pqml/brique#readme",
-  "dependencies": {
-    "fs-extra": "^1.0.0",
-    "js-string-escape": "^1.0.1",
-    "kool-shell": "^1.4.0",
-    "stringify-object": "^3.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "fmt-obj": "^1.3.0"
-  },
-  "engines": {
-    "node": ">=4.0.0"
+    "eslint": "^4.18.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "ghp": "^1.1.4",
+    "light-server": "^2.4.0",
+    "microbundle": "^0.4.3"
   }
 }
